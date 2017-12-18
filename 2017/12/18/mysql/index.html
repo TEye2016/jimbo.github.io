@@ -7,17 +7,17 @@
   
   <title>mysql优化 | My KingDom</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="#Mysql优化相关知识 ####Explain关键字 #####1.是什么        执行计划信息 #####2.怎么用       Explain sql语句 ######3.执行后包含的信息id  | select_type | table | type | possible_keys | keys | key_len | ref |    rows  | Extra  id: 表示语句">
+  <meta name="description" content="Mysql优化相关知识Explain关键字1.是什么执行计划信息 2.怎么用Explain sql语句 3.执行后包含的信息 id  | select_type | table | type | possible_keys | keys | key_len | ref |    rows  | Extra  id: 表示语句的执行顺序，值越大越先执行 select_type : 查询的类型，有si">
 <meta property="og:type" content="article">
 <meta property="og:title" content="mysql优化">
 <meta property="og:url" content="http://yoursite.com/2017/12/18/mysql/index.html">
 <meta property="og:site_name" content="My KingDom">
-<meta property="og:description" content="#Mysql优化相关知识 ####Explain关键字 #####1.是什么        执行计划信息 #####2.怎么用       Explain sql语句 ######3.执行后包含的信息id  | select_type | table | type | possible_keys | keys | key_len | ref |    rows  | Extra  id: 表示语句">
+<meta property="og:description" content="Mysql优化相关知识Explain关键字1.是什么执行计划信息 2.怎么用Explain sql语句 3.执行后包含的信息 id  | select_type | table | type | possible_keys | keys | key_len | ref |    rows  | Extra  id: 表示语句的执行顺序，值越大越先执行 select_type : 查询的类型，有si">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2017-12-18T12:34:43.711Z">
+<meta property="og:updated_time" content="2017-12-18T12:41:28.093Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="mysql优化">
-<meta name="twitter:description" content="#Mysql优化相关知识 ####Explain关键字 #####1.是什么        执行计划信息 #####2.怎么用       Explain sql语句 ######3.执行后包含的信息id  | select_type | table | type | possible_keys | keys | key_len | ref |    rows  | Extra  id: 表示语句">
+<meta name="twitter:description" content="Mysql优化相关知识Explain关键字1.是什么执行计划信息 2.怎么用Explain sql语句 3.执行后包含的信息 id  | select_type | table | type | possible_keys | keys | key_len | ref |    rows  | Extra  id: 表示语句的执行顺序，值越大越先执行 select_type : 查询的类型，有si">
   
     <link rel="alternate" href="/atom.xml" title="My KingDom" type="application/atom+xml">
   
@@ -86,11 +86,10 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>#Mysql优化相关知识</p>
-<p>####Explain关键字</p>
-<p>#####1.是什么<br>        执行计划信息</p>
-<p>#####2.怎么用<br>       Explain sql语句</p>
-<h2 id="3-执行后包含的信息"><a href="#3-执行后包含的信息" class="headerlink" title="######3.执行后包含的信息"></a>######3.执行后包含的信息</h2><pre><code>id  | select_type | table | type | possible_keys | keys | key_len | ref |    rows  | Extra
+        <h1 id="Mysql优化相关知识"><a href="#Mysql优化相关知识" class="headerlink" title="Mysql优化相关知识"></a>Mysql优化相关知识</h1><h4 id="Explain关键字"><a href="#Explain关键字" class="headerlink" title="Explain关键字"></a>Explain关键字</h4><h5 id="1-是什么"><a href="#1-是什么" class="headerlink" title="1.是什么"></a>1.是什么</h5><pre><code>执行计划信息
+</code></pre><h5 id="2-怎么用"><a href="#2-怎么用" class="headerlink" title="2.怎么用"></a>2.怎么用</h5><pre><code>Explain sql语句
+</code></pre><h6 id="3-执行后包含的信息"><a href="#3-执行后包含的信息" class="headerlink" title="3.执行后包含的信息"></a>3.执行后包含的信息</h6><hr>
+<pre><code>id  | select_type | table | type | possible_keys | keys | key_len | ref |    rows  | Extra
 </code></pre><hr>
 <pre><code>id: 表示语句的执行顺序，值越大越先执行
 select_type : 查询的类型，有simple，primary，union等
@@ -107,7 +106,7 @@ Extra：
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/12/18/mysql/" data-id="cjbc6qx780001n0owex432kzb" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/12/18/mysql/" data-id="cjbc6wdyv000128owh4lv2y4c" class="article-share-link">Share</a>
       
       
     </footer>
