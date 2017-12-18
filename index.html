@@ -62,6 +62,59 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-mysql" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/12/18/mysql/" class="article-date">
+  <time datetime="2017-12-18T12:17:06.000Z" itemprop="datePublished">2017-12-18</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/12/18/mysql/">mysql优化</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>#Mysql优化相关知识</p>
+<p>####Explain关键字</p>
+<p>#####1.是什么<br>        执行计划信息</p>
+<p>#####2.怎么用<br>       Explain sql语句</p>
+<h2 id="3-执行后包含的信息"><a href="#3-执行后包含的信息" class="headerlink" title="######3.执行后包含的信息"></a>######3.执行后包含的信息</h2><pre><code>id  | select_type | table | type | possible_keys | keys | key_len | ref |    rows  | Extra
+</code></pre><hr>
+<pre><code>id: 表示语句的执行顺序，值越大越先执行
+select_type : 查询的类型，有simple，primary，union等
+table ： 对应查询所用的表
+type ： 连接类型，常见的类型由最佳到最差依次是：
+ system &gt; const &gt; equal_ref &gt; ref &gt; range &gt; index &gt; all
+psossible_keys : 查询可能用到的索引
+keys：查询实际用到的索引
+key_len：使用到的索引的长度
+ref:
+rows:执行查询的行数，值越小越好
+Extra：
+</code></pre>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/12/18/mysql/" data-id="cjbc6qx780001n0owex432kzb" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-My-first-page" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2017/12/12/My-first-page/" class="article-date">
@@ -89,7 +142,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/12/12/My-first-page/" data-id="cjb3lpwzl0000fcow0wld4huc" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/12/12/My-first-page/" data-id="cjbc6qx710000n0ownmzddt7a" class="article-share-link">Share</a>
       
       
     </footer>
@@ -128,6 +181,10 @@
     <h3 class="widget-title">最新文章</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2017/12/18/mysql/">mysql优化</a>
+          </li>
         
           <li>
             <a href="/2017/12/12/My-first-page/">前言</a>
